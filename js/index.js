@@ -117,7 +117,11 @@ list.addEventListener("click", function(event) {
     localStorage.setItem('TODO', JSON.stringify(LIST));
     });
 
-
+    $(document).ready(function() {
+        $("#add").click(function() {
+          $("#form").toggle();
+        });
+      });
 
 
 

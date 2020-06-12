@@ -5,22 +5,26 @@ body {
   }
   .container {
     width: 20rem;
-    height: 32rem;
+    height: 35rem;
     margin-right: auto;
     margin-left: auto;
     margin-top: 7vmin;
-    border-radius: 5vmin;
-     box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
+    border-radius: 1rem;
+     box-shadow: 0 50px 100px rgba(50,50,93,.15),
+      0 15px 35px rgba(50,50,93,.2),
+       0 5px 15px rgba(0,0,0,.12);
   }
   .dayinaweek {
     height: 20%;
     background: #1b114d;
-    border-radius: 5vmin 5vmin 0 0;
+    border-radius: 1rem 1rem 0 0;
     font-size: 17px;
     color: white;
     font-weight: 400;
     margin: auto;
-    text-align: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
   }
   h1 {
     position: relative;
@@ -72,13 +76,14 @@ body {
     height: 68%;
     width: inherit;
     overflow-y: scroll;
-    background: #f8fbff;
-    position: relative;
+    border-top-left-radius: 4rem;    position: relative;
     top: -140px;
+    background-color: white;
   }
   ul {
     padding: 2vmin;
     margin: 0px;
+    background-color: white;
   }
   .item {
     display: flex;
@@ -108,13 +113,13 @@ body {
     padding: 2vmin;
     padding-left: 7px;
     background: #f8fbff;
-    border-radius:0 0 5vmin 5vmin;
+    border-radius:0 0 1rem 1rem;
   }
   #form {
     width: 60%;
     height: 30%;
     position: absolute;
-    display: block;
+    display: none;
     margin-top: -20px;
   }
   #input {
@@ -145,6 +150,7 @@ body {
   .react {
     font-size: smaller;
     text-align: center;
+    padding: 1rem;
     margin: 10px;
     vertical-align: baseline;
     padding: 10px;
@@ -156,7 +162,41 @@ body {
     margin-left: auto;
     margin-top: -8px;
     margin-right: 20px;  }
-
+  .circle{
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    margin-left: -5rem;
+    border-radius: 50%;
+    background-color:#1b114d;
+  }
+  .circle1{
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    margin-left: 20rem;
+    margin-top: 20rem;
+    border-radius: 50%;
+    background-color:#1b114d;
+  }
+  .circle3{
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    margin-left: 70rem;
+    margin-top: 5rem;
+    border-radius: 50%;
+    background-color:#1b114d;
+  }
+  .circle2{
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    margin-left: 40rem;
+    margin-top: 20rem;
+    border-radius: 50%;
+    background-color:#1b114d;
+  }
   @media only screen and (max-width:400px) {
       #date {font-size: 15px; margin-top: 18px;}
       .clear{font-size: 20px; margin-top: 18px;}
